@@ -1,0 +1,40 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig-build.json",
+    "migrate": "node build/database/migrate.js",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "start": "node build/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "neo4j-driver": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/jest": "^26.0.19",
+    "@types/neo4j": "^2.0.2",
+    "@types/node": "^14.14.12",
+    "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.9.1",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1",
+    "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "typescript": "4.0.5"
+  }
+}
