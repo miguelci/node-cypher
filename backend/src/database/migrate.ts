@@ -8,7 +8,7 @@ async function extract() {
   return httpGet(url);
 }
 
-async function treatment(nodeData: NodeData[]) {
+async function transform(nodeData: NodeData[]) {
   return nodeData.map((node) => ({
     name: node.name,
     description: node.description,
@@ -37,7 +37,7 @@ async function load(nodeData: NodeData[]) {
 
 const migrate = async () => {
   await extract()
-    .then((response: NodeData[]) => treatment(response))
+    .then((response: NodeData[]) => transform(response))
     .then((response: NodeData[]) => load(response))
     .then(() => console.log('Data was correctly migrated'));
 };
