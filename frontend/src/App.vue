@@ -10,8 +10,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import Tree from '@/components/Tree.vue';
 import axios, { AxiosResponse } from 'axios';
+import Tree from '@/components/Tree.vue';
 import { Hierarchy } from './types';
 
 @Component({
