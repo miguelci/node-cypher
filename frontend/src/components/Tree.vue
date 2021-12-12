@@ -38,7 +38,7 @@ export default class Tree extends Vue {
     this.header = value;
   }
 
-  setCurrentElement(element: HTMLElement | null): void{
+  setCurrentElement(element: HTMLElement | null): void {
     this.currentElement = element;
   }
 
