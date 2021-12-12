@@ -11,4 +11,6 @@ RUN yarn --frozen-lock-file
 
 COPY . .
 
+RUN yarn build
+
 CMD ["node", "build/server.js"]
